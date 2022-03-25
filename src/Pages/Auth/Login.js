@@ -26,9 +26,8 @@ const Login = ({signin}) => {
         setLoading(true)
         signin(values).then((res)=> {
             setLoading(false)
-            console.log(res)
             if(res){
-
+              window.location.reload()
             }
             else{
                 toast.error("Sigin Failed")

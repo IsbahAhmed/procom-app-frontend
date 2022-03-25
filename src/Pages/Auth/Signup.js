@@ -32,6 +32,7 @@ const Signup = ({ signup }) => {
           setLoading(false);
           if (res) {
             toast.success("Successfully Registered");
+            window.location.reload()
           } else {
             toast.error("Sigin Failed");
           }
